@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GenericsIntro
 {
-    public class MyDictionary<T1,T2>
+    public class MyDictionary<T1, T2>
     {
         T1[] keys;
         T2[] values;
@@ -23,7 +23,7 @@ namespace GenericsIntro
                 keys[i] = tempArrayKeys[i];
             }
             keys[keys.Length - 1] = key;
-          //  -----------------------------------------------
+            //  -----------------------------------------------
             values = new T2[values.Length + 1];
             for (int i = 0; i < tempArrayValues.Length; i++)
             {

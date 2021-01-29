@@ -17,11 +17,10 @@ namespace GenericsIntro
             MyDictionary<int, string> towns = new MyDictionary<int, string>();
             towns.Add(34, "İstanbul");
             towns.Add(35, "İzmir");
+            towns.Add(02, "Adıyaman");
 
-            foreach (var town in towns.Keys)
-            {
-                Console.WriteLine(town);
-            }
+            Console.WriteLine(towns.LengthKey);
+            Console.WriteLine(towns.LengthValue);
         }
     }
 }

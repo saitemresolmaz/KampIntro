@@ -25,7 +25,7 @@ namespace AbstractClass
     {
         public void Add()
         {
-            Console.WriteLine("Veritabanına eklendi");
+            Console.WriteLine("Added");
         }
         public abstract void Update();
 

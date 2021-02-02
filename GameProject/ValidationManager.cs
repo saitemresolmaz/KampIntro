@@ -12,13 +12,7 @@ namespace GameProject
 
             if (gamer.TcNo == "26118673466" && gamer.Name == "Koray" && gamer.Surname == "Bıçak" && gamer.BirthOfDay == "27.05.1996")
             {
-                Console.WriteLine(gamer.Name + " " + gamer.Surname + " > Doğrulama Başarılı");
                 return true;
-
-            }
-            else
-            {
-                Console.WriteLine(gamer.Name + " " + gamer.Surname + " > Doğrulama Geçersiz");
 
             }
             return false;

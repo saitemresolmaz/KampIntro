@@ -27,7 +27,7 @@ namespace GameProject
             };
 
             List<Gamer> gamers = new List<Gamer>() { gamer1, gamer2 };
-            GamerManager gamerManager = new GamerManager(new ValidationManager());
+            GamerManager gamerManager = new GamerManager(new NewEStateUserValidationManager());
             gamerManager.Add(gamers);
 
             Game game1 = new Game() { Id = 1, Name = "PubG", Platform = "XBOX", Price = 90.6 };
@@ -38,14 +38,9 @@ namespace GameProject
             Campaign campaign = new Campaign() { Id = 1, Name = "Black Friday", DiscountRate = 50, CampaignDetails = "Ocak Sonuna Kadar" };
             CampaignManager campaignManager = new CampaignManager();
             campaignManager.Add(campaign);
-
-
-
-            if (gamerManager.count.Count != 0)   // E devletten doğrulaması olmayan sisteme eklenmediği için satış işlemi de yapamaz.
-            {
-                Sales sales = new Sales();
-                sales.Sell(games, gamer1, campaign);
-            }
+            Sales sales = new Sales();
+            sales.Sell(games, gamer1, campaign);
+            //sales.Sell(games, gamer2, campaign);
         }
     }
 }

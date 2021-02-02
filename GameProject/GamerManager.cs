@@ -20,9 +20,13 @@ namespace GameProject
             {         
                 if (_validationService.Validate(gamer) == true)
                 {
-                    Console.WriteLine("Sn. " + gamer.Name + " " + gamer.Surname + " sisteme kaydınız başarı ile oluşturuldu.");
+                    Console.WriteLine("Doğrulama Başarılı. Sn. " + gamer.Name + " " + gamer.Surname + " sisteme kaydınız başarı ile oluşturuldu.");
                     count.Add(1);
                     
+                }
+                else
+                {
+                    Console.WriteLine("Doğrulama başarısız, Kayıt gerçekleşmedi.");
                 }
 
             }

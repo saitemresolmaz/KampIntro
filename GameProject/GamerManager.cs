@@ -6,14 +6,19 @@ namespace GameProject
 {
     class GamerManager : IGamerService
     {
+        IValidationService _validationService;
+
+        public GamerManager(IValidationService validationService)
+        {
+            _validationService = validationService;
+        }
+
         public List<int> count = new List<int>();
         public void Add(List<Gamer> gamers)
         {
             foreach (var gamer in gamers)
-            {
-                ValidationManager validationManager = new ValidationManager();
-                bool result = validationManager.Validate(gamer);
-                if (result == true)
+            {         
+                if (_validationService.Validate(gamer) == true)
                 {
                     Console.WriteLine("Sn. " + gamer.Name + " " + gamer.Surname + " sisteme kaydınız başarı ile oluşturuldu.");
                     count.Add(1);

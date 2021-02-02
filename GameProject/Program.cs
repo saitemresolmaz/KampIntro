@@ -27,7 +27,7 @@ namespace GameProject
             };
 
             List<Gamer> gamers = new List<Gamer>() { gamer1, gamer2 };
-            GamerManager gamerManager = new GamerManager();
+            GamerManager gamerManager = new GamerManager(new ValidationManager());
             gamerManager.Add(gamers);
 
             Game game1 = new Game() { Id = 1, Name = "PubG", Platform = "XBOX", Price = 90.6 };

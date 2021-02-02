@@ -31,11 +31,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractClass", "AbstractCl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameProject", "GameProject\GameProject.csproj", "{489A8139-DC18-4077-9B11-031A6D0AC1C0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{9B9135C8-0F4F-49C2-815B-8B7C48D74184}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\sqlWork.sql = ..\..\..\Desktop\sqlWork.sql
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
